@@ -24,8 +24,7 @@
                     <i class="fa-regular fa-envelope"></i>
                 </ul>
         </nav>
-        <section>
-                
+        <section>     
                 <article>
                     <h2>Hi, we are trackgenix</h2>
                     <small>
@@ -40,7 +39,6 @@
                     </a>
                 </article>
         </section>
-        <hr>
         <section>
             <h2>Hours</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -51,7 +49,6 @@
             <h2>Multiple Roles</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </section>
-        <hr>
         <section>
             <h2>Productivity Booster</h2>
             <h2>Leadership and team management</h2>
@@ -61,7 +58,6 @@
             <h2>Decision making</h2>
             <i class="fa-solid fa-object-ungroup"></i>
         </section>
-        <hr>
         <section>
             <h2>Contact us for information about the system</h2>
             <form action="process.php" method="post">
@@ -75,11 +71,15 @@
                 </div>
                 <div>
                     <label>E-mail</label>
-                    <Input type="text" email="email">
+                    <Input type="email" email="email">
                 </div>
                 <div>
                     <label>Contact area:</label>
-                    <Input type="email" email="contacarea">
+                    <select name="area">
+                        <option value="sales">Sales</option>
+                        <option value="management">Management</option>
+                        <option value="Hr">Human Resources</option>
+                    </select>
                 </div>
                 <div>
                     <label>Message</label>
