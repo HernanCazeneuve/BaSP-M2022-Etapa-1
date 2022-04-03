@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+    font-family: roboto, sans-serif, arial, helvetica;
+}
+header {
+    background-color: #46A37C;
+    height: 150px;
+    width: 100%;
+    
+    }
+h1 {
+    color: #373867;;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-indent: 350px;
+}
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+aside {
+    position: fixed;
+    float: left;
+    top: 150px;
+    width: 254px;
+    height: 100%;
+    background: 373867;
+    text-align: center;
+    padding-top: 50px;
+}
