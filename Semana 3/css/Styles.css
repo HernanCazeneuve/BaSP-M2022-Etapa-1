@@ -23,7 +23,7 @@ h1 {
     top: 0;
     left: 0;
 }
-aside {
+aside{
     position: fixed;
     float: left;
     top: 150px;
@@ -74,18 +74,9 @@ aside a:hover{
 section{
     margin-left: 300px;
 }
-.line{
-    width: 90%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    border-bottom: 2px solid lightgray;
-}
-.line1{
-    margin-left: 300px;
-    width: 1450px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    border-bottom: 2px solid lightgray;
+.test{
+    padding: 25px 0px 10px 0px;
+    border-bottom: 1px solid black;
 }
 .home p{
     font-weight: 400;
@@ -93,14 +84,14 @@ section{
     line-height: 30px;
     padding-top:30px;
 }
-.utilities {
+.utilities{
     display: inline-block;
     width: 332px;
     height: 276px;
     background-color: #FDFDFD;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin: 30px 70px 30px;
-    padding: 40px;
+    margin: 5% 5% 5% 9%;
+    padding: 15px;
     border-radius: 40px;
     text-align: center;
     border: 1px solid #FDFDFD;
@@ -150,6 +141,9 @@ section{
     display: inline-block;
     width:70px;
     height:70px;
+}
+.content{
+    margin-left:13%
 }
 #contact h2{
     font-weight: 700;
@@ -228,6 +222,7 @@ textarea{
     box-shadow: 0px 8px 100px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     margin-bottom: 50px;
+    margin-left: 13%;
 }
 .who h2{
     font-weight: 700;
@@ -240,14 +235,13 @@ textarea{
     font-size: 18px;
     line-height: 21px;
     color: #151515;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .lists{
     display: inline-block;
-    width: 28%;
-    display: inline-block;
-    margin: 10px 35px 10px;
+    width: 25%;
+    margin-left: 8%;
 }
 .lists h2{
     font-weight: 700;
@@ -276,12 +270,14 @@ textarea{
     display: inline-block;
     width: 30px;
     height: 30px;
+    margin-top: 2%;
 }
 .footer p{
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #000000;
+    margin-top: 2%;
 }
 
 
