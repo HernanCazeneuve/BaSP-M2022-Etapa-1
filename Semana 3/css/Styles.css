@@ -82,7 +82,7 @@ section{
 }
 .line1{
     margin-left: 300px;
-    width: 78%;
+    width: 1450px;
     margin-top: 100px;
     margin-bottom: 50px;
     border-bottom: 2px solid lightgray;
@@ -121,7 +121,7 @@ section{
 .upgrades{
     display: inline-block;
     width: 45%;
-    height: 250px;
+    height: 150px;
     text-align: center;
     vertical-align: middle;
     padding: 10px;
@@ -137,7 +137,6 @@ section{
 .textup h2{
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
     color: #373867;
 }
 .icon{
@@ -155,30 +154,35 @@ section{
 #contact h2{
     font-weight: 700;
     font-size: 24px;
-    line-height: 35px;
     color: #373867;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 input{
     display: inline-block;
-    width: 80%;
+    width: 86%;
     padding-bottom: 10px;
 }
 label{
-    display: inline-block;
-    width: 75%;
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #373867;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px;
 }
-.name{
+.st-name{
     display: inline-block;
-    position: relative;
-    bottom: 20px;
-    width: 30%;
+    width: 40%;
+}
+.l-name{
+    display: inline-block;
+    width: 40%;
+}
+.e-form{
+    display: inline-block;
+    width: 74.5%;
+    padding-top: 5px;
 }
 .area{
     display: inline-block;
@@ -191,7 +195,6 @@ textarea{
     height: 150px;
     padding-bottom: 10px;
 }
-
 .button-s{
     width: 137px;
     height: 34px;
@@ -203,6 +206,7 @@ textarea{
     background-color: #AACE9B;
     border-radius: 5px;
     text-align: center; 
+    margin: 10px 0px;
 }
 .button-r{
     width: 137px;
@@ -215,9 +219,10 @@ textarea{
     color: #373867;
     background-color: #fff;
     text-align: center;
+    margin: 10px 0px;
 }
 .who{
-    width: 80%;
+    width: 65%;
     height: 250px;
     background: #FDFDFD;
     box-shadow: 0px 8px 100px rgba(0, 0, 0, 0.1);
@@ -237,11 +242,10 @@ textarea{
     color: #151515;
     padding-left: 40px;
     padding-right: 40px;
-
 }
 .lists{
     display: inline-block;
-    width: 25%;
+    width: 28%;
     display: inline-block;
     margin: 10px 35px 10px;
 }
