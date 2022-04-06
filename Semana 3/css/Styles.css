@@ -9,7 +9,7 @@ header {
     background-color: #46A37C;
     height: 150px;
     width: 100%;
-    }
+}
 h1 {
     color: #373867;;
     font-size: 40px;
@@ -86,7 +86,7 @@ section{
 }
 .utilities{
     display: inline-block;
-    width: 332px;
+    width: 20%;
     height: 276px;
     background-color: #FDFDFD;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
