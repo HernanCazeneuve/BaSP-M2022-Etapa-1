@@ -7,7 +7,7 @@
         <title>Trackgenix SA</title>
         <link rel="stylesheet" type="text/css" href="../Semana 4/Css/reset.css">
         <link rel="stylesheet" type="text/css" href="../Semana 4/Css/Style.css">
-        <link rel="stylesheet" type="text/css" href="../Semana 4/Css/Heather.css">
+        <link rel="stylesheet" type="text/css" href="../Semana 4/Css/Header.css">
         <link rel="stylesheet" type="text/css" href="../Semana 4/Css/Sidebar.css">
         <link rel="stylesheet" type="text/css" href="../Semana 4/Css/Main.css">
         <link rel="stylesheet" type="text/css" href="../Semana 4/Css/Footer.css">
@@ -15,20 +15,27 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="./Media/logo.png" alt="Radium Rocket">
-            <h1>
-                 Trackgenix SA
+            <div class="hamb-container">
+                <div class="hamb-menu">
+                    <img class="logo" src="../Semana 4/Media/hamburguer.png" alt="Radium Rocket">
+                </div>
+            </div>
+            <h1 class="main-title">
+                Trackgenix SA
             </h1>
         </header>
-        <aside class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log in</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </aside>
-        <section class="test">
+        <div class="container">
+            <aside class="menu">
+                <img class="logo" src="./Media/logo.png" alt="Radium Rocket">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </aside>
+        </div>
+        <section class="container">
             <div class="home">
                 <article>
                     <a href="./Media/landing.jpg">
@@ -49,7 +56,7 @@
                 </article>
             </div>
         </section>
-        <section class="test">
+        <section class="container">
             <div class="rec">
                 <div class="utilities">
                     <h2>Hours</h2>
@@ -81,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="test">
+        <section class="container">
             <div class="upgrades">
                 <div class="icon">
                     <img src="./Media/09 - Browser.png" alt="Productivity">
@@ -135,7 +142,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="test">
+        <section id="contact" class="container">
             <div class="content">
                 <h2>Contact us for information about the system</h2>
                 <form action="process.php" method="post">
@@ -170,8 +177,8 @@
                 </form>
             </div>
         </section>
-        <section class="test">
-            <div class="who">
+        <section class="container">
+            <div class="who-we-are">
                 <h2>Who we are</h2>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -180,7 +187,7 @@
                 </p>
             </div>
         </section>
-        <section class="test">
+        <section class="container">
             <div class="lists">
                 <h2>Products</h2>
                 <ol>
@@ -209,27 +216,29 @@
                 </ul>
             </div>
         </section>
-        <footer class="footer">
-            <a href="https://www.linkedin.com/company/radium-rocket/">
-                <img src="./Media/LI.png" alt="LinkedIn">
-            </a>
-            <a href="https://www.facebook.com/radiumrocket">
-                <img src="./Media/FB.png" alt="facebook">
-            </a>
-            <a href="https://twitter.com/radiumrocket">
-                <img src="./Media/TW.png" alt="twitter">
-            </a>
-            <a href="https://github.com">
-                <img src="./Media/nose.png" alt="github">
-            </a>
-            <a href="https://www.instagram.com/radium.rocket/">
-                <img src="./Media/IG.png" alt="instagram">
-            </a>
-            <div class="copy"> 
-                <p>
-                    Copyright &copy; 2022 Trackgenix S.A. All rights reserved.
-                </p>
-            </div>
-        </footer>
+        <div class="container">
+            <footer class="footer">
+                <a href="https://www.linkedin.com/company/radium-rocket/">
+                    <img src="./Media/LI.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.facebook.com/radiumrocket">
+                    <img src="./Media/FB.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com/radiumrocket">
+                    <img src="./Media/TW.png" alt="twitter">
+                </a>
+                <a href="https://github.com">
+                    <img src="./Media/nose.png" alt="github">
+                </a>
+                <a href="https://www.instagram.com/radium.rocket/">
+                    <img src="./Media/IG.png" alt="instagram">
+                </a>
+                <div class="copy"> 
+                    <p>
+                        Copyright &copy; 2022 Trackgenix S.A. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
