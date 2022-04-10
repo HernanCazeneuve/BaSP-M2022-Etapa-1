@@ -1,13 +1,11 @@
 a:link, a:visited, a:active {
     text-decoration: none;
+}
+ul, ol {
+    text-decoration: none;
 }    
 body{
     font-family: "Roboto", sans-serif;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid black;
 }
 @media (min-width: 820px){
     .main-title h1{
@@ -20,6 +18,27 @@ body{
     .hamb-container{
         display: none;
     }
+    .Title-Home{
+        font-family: "Roboto", sans-serif;
+        color: #373867;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .flex-item-home p{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        text-align: left;
+        color: #373867;
+    }
+    .intro h3{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        text-align: left;
+        font-size: 16px;
+        color: #B4AFAF;
+    }
 }
 @media (max-width: 820px){
     .menu{
@@ -27,9 +46,31 @@ body{
     }
     .main-title h1{
         font-family: "Roboto", sans-serif;
-        color: #373867;;
+        color: #373867;
         font-size: 30px;
         font-weight: bold;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .Title-Home{
+        font-family: "Roboto", sans-serif;
+        color: #373867;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .flex-item-home p{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        text-align: center;
+        color: #373867;
+    }
+    .intro h3{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 10px;
+        color: #B4AFAF;
+        text-align: center;
+
     }
 }

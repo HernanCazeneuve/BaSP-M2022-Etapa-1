@@ -1,18 +1,28 @@
-
-.home {
+.flex-container-home{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+   justify-content: center;
 }
-
-.ph{
-    width: 45%;
+.flex-item-home{
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    min-width: 400px;
+    align-items: center;
 }
-
-h3 {
+.Title-home{
+    text-align: center;
     width: 100%;
 }
-
-.home p{
-    width: 40%;
+.intro{
+    text-align: center;
+    width: 100%;
+}
+.content{
+    text-align: center;
+    width: 100%;  
+}
+.ph img{
+    width: 200px;
+    height: 250px;
 }
