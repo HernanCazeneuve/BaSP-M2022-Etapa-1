@@ -4,29 +4,28 @@ header{
     background-color: #46A37C;
     align-items: center;
  }
-img {
-    justify-items: left;
-}
+
 .main-title{
+    width: 80%;  
+    text-align: center;
+    margin-right: 20%;
+}
+
+.hamb-menu img {
+    width: 80%;
+}
+
+.hamb-menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    color: #373867;;
-    font-size: 30px;
-    font-weight: 700;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.hamb-container{
-    width: 30%;
-}
-.hamb-menu{
-    display: flex;
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 1px solid #000;
+    background-color: #3b956f;
 }
-img{
-    width: 100px;
+
+.hamb-container{
+    width: 20%;
+    margin-left: 20px;
 }

@@ -1,0 +1,18 @@
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ph{
+    width: 45%;
+}
+
+h3 {
+    width: 100%;
+}
+
+.home p{
+    width: 40%;
+}
