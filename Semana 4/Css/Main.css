@@ -1,3 +1,7 @@
+a:link, a:visited, a:active {
+    text-decoration: none;
+} 
+ /* //////////HOME//////////  */
 .flex-container-home{
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +33,7 @@
     height: 250px;
     padding: 10px
 }
+ /* //////////RESOURCES//////////  */
 .flex-container-resources{
     display: flex;
     flex-direction: row;
@@ -63,7 +68,7 @@
     color: #373867;
     padding: 10px;
 }
-
+ /* //////////UPGRADES//////////  */
 .flex-container-upgrades{
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +85,9 @@
     margin: 10px 10px;
     padding: 10px;
 }
-.icon img{
+.icon img {
+    max-width: 200px;
+    max-height: 200px;
     width: 100%;
     height: 100%;
     padding: 2%;
@@ -97,4 +104,62 @@
     font-size: 20px;
     color: #46A37C;
     padding: 10px;
+}
+ /* //////////FORMS//////////  */
+ /* //////////WHO WE ARE//////////  */
+ .container-who{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .who-we-are{
+    width: 80%;
+    border: 1px solid #F2F2F2;
+    margin: 10px 10px;
+    padding: 10px;
+    background: #F2F2F2;
+    box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    font-family: "Roboto", sans-serif;
+}
+.who-we-are p{
+    font-size: 18px;
+    color: #151515;
+    padding: 5px 0px;
+}
+
+
+
+  /* //////////LISTS//////////  */
+.flex-container-lists{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.lists{
+    width: 32%;
+    margin: 0px 10px;
+    background-color: tomato;
+    font-family: "Roboto", sans-serif;
+}
+
+.lists h2{
+    font-size: 30px;
+    font-style: bold;
+    padding-bottom: 10px;
+}
+.lists ol{
+    list-style-type:decimal;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: black;
+}
+    .lists ul{
+    list-style-type:circle;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: black;
 }
