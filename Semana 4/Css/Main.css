@@ -116,12 +116,16 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
+     color: #373867;
+     padding: 10px 0px 10px;
+     font-family: "Roboto", sans-serif;
  }
  .name{
      display: flex;
      flex-direction: column;
      width: 49%;
-     min-width:300px;
+     min-width:435px;
+     margin-left: 5%;
  }
  .container-names{
      display: flex;
@@ -129,11 +133,21 @@
      height: 100%;
  }
  label{
-     width: 100%;
-     margin-left: 5%
+    width: 100%;
+    margin-left: 5%;
+    font-size: 14px;
  }
  .area {
      width: 90%;
+ }
+ #contact h2{
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #373867;
+    padding: 10px 0px;
+    font-family: "Roboto", sans-serif;
+    margin-right: 10%;
  }
 
  /* //////////WHO WE ARE//////////  */
@@ -168,8 +182,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    margin-left: 20px;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .lists{
@@ -184,14 +198,12 @@
     text-align: center;
 }
 .lists ol{
-    list-style-type:decimal;
     padding: 10px 10px;
     font-size: 20px;
     margin: 0px 15px;
     text-align: center;
 }
 .lists ul{
-    list-style-type:circle;
     padding: 10px 10px;
     font-size: 20px;
     margin: 0px 15px;

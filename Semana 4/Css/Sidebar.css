@@ -1,18 +1,15 @@
 .logo{
-    height: 150px; 
-}
-.logo-container{
     height: 150px;
     width: 100%;
 }
-.menu ul{
+.menu{
 font-family: "Roboto", sans-serif;
 font-style: bold;
 font-size: 30px;
 text-align: center;
-margin: 3.5%;
 position:fixed;
-
+height: 100%;
+width: 20%;
 }
 .menu a{
     color: #ffff;

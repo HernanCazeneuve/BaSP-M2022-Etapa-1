@@ -8,6 +8,8 @@ This first week Figma was presented to us, so our objective was disgning the fir
 We were introduced to HTML and this time the task was coding the landing page developed in Figma with this language.
 ### ```Week 3```
 We were introduced to CSS added styles to the HTML file with it.
+### ```Week 4```
+Now that we acquired basic css abilities we were shown the tool flex-box to rework the css.
 
 ##### Author
 **Hernán Cazeneuve**
