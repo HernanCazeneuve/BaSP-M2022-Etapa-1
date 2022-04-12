@@ -10,7 +10,8 @@ font-family: "Roboto", sans-serif;
 font-style: bold;
 font-size: 30px;
 text-align: center;
-margin: 5%;
+margin: 3.5%;
+position:fixed;
 
 }
 .menu a{

@@ -8,11 +8,11 @@
 .flex-item-home{
     display: flex;
     flex-direction: column;
-    max-width: 65%;
-    min-width: 400px;
+    max-width: 70%;
+    min-width: 300px;
     align-items: center;
 }
-@media (min-width: 820px){
+@media (min-width: 840px){
     .flex-item-home {
         display: flex;
         flex-direction: column;
@@ -24,7 +24,6 @@
 .Title-home{
     text-align: center;
     width: 100%;
-
 }
 .intro{
     text-align: center;
@@ -32,13 +31,14 @@
 }
 .content{
     text-align: center;
-    width: 70%;
+    width: 65%;
 }
 .ph img{
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     padding: 10px
 }
+
  /* //////////RESOURCES//////////  */
 .flex-container-resources{
     display: flex;
@@ -86,7 +86,7 @@
     display: flex;
     align-items:center;
     justify-content:center;
-    min-width: 300px;
+    min-width: 280px;
     width: 40%;
     margin: 10px 10px;
     padding: 10px;
@@ -116,23 +116,24 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     align-items: center;
  }
- .st-name{
+ .name{
      display: flex;
-     flex:column;
-     align-items: center;
-     flex-wrap: wrap;
-     width: 45%;
-     min-width: 300px;
+     flex-direction: column;
+     width: 49%;
+     min-width:300px;
  }
- .l-name{
-    display: flex;
-    flex:column;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 45%;
-    min-width: 300px;
+ .container-names{
+     display: flex;
+     flex-wrap: wrap;
+     height: 100%;
+ }
+ label{
+     width: 100%;
+     margin-left: 5%
+ }
+ .area {
+     width: 90%;
  }
 
  /* //////////WHO WE ARE//////////  */
@@ -168,11 +169,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-left: 20px;
 }
 
 .lists{
     min-width: 250px;
-    max-width: 30%;
+    max-width: 25%;
     font-family: "Roboto", sans-serif;
 }
 .lists h2{
@@ -183,14 +185,15 @@
 }
 .lists ol{
     list-style-type:decimal;
-    padding: 10px 0px;
+    padding: 10px 10px;
     font-size: 20px;
+    margin: 0px 15px;
     text-align: center;
 }
 .lists ul{
     list-style-type:circle;
-    padding: 10px 0px;
+    padding: 10px 10px;
     font-size: 20px;
-    margin: 0px 10px;
+    margin: 0px 15px;
     text-align: center;
 }
