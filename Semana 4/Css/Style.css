@@ -6,15 +6,34 @@ body{
     font-family: "Roboto", sans-serif;
 }
 @media (min-width: 820px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-container-nav{
+        width: 20%;
+        background-color: #373867;
+    }
+    .flex-container-page{
+        width: 80%;
+    }
     .main-title h1{
         font-family: "Roboto", sans-serif;
-        color: #373867;;
+        color: #373867;
         font-size: 40px;
         font-weight: bold;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .hamb-container{
         display: none;
+    }
+    .flex-item-home{
+        display: flex;
+        flex-direction: column;
+        max-width: 65%;
+        min-width: 400px;
+        align-items: flex-start;
     }
     .Title-Home{
         font-family: "Roboto", sans-serif;

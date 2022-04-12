@@ -1,0 +1,21 @@
+.logo{
+    height: 150px; 
+}
+.logo-container{
+    height: 150px;
+    width: 100%;
+}
+.menu ul{
+font-family: "Roboto", sans-serif;
+font-style: bold;
+font-size: 30px;
+text-align: center;
+margin: 5%;
+
+}
+.menu a{
+    color: #ffff;
+}
+.menu li{
+    padding: 15px; 
+}
