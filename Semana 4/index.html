@@ -146,18 +146,16 @@
             <section id="contact" >
                 <h2>Contact us for information about the system</h2>
                 <form class="flex-container-form" action="process.php" method="post">
-                    <div class="container-names">
-                        <div class="name">
-                            <label>First Name</label>
-                            <Input type="text" name="firstname" placeholder="Juan">
-                        </div>
-                        <div class="name">    
-                            <label>Last Name</label>
-                            <Input type="text" last-name="lastname" placeholder="Perez">
-                        </div>
+                    <div class="f-name">
+                        <label>First Name</label>
+                        <Input type="text" name="firstname" placeholder="Juan">
+                    </div>
+                    <div class="l-name">    
+                        <label>Last Name</label>
+                        <Input type="text" last-name="lastname" placeholder="Perez">
                     </div>
                     <label>E-mail</label>
-                    <Input class="area" type="email" class="e-form" email="email" placeholder="email@example.com">
+                    <Input class="e-form" type="email"  email="email" placeholder="email@example.com">
                     <label>Contact area:</label>
                     <select class="area" name="area">
                         <option value="sales">Sales</option>
@@ -166,8 +164,8 @@
                     </select>
                     <label>Message</label>
                     <textarea class="area" ></textarea>
-                    <div>
-                        <input class="button-s" type="submit" name="submit" value="submit">
+                    <div class="buttons"> 
+                        <input class="button-s" type="submit" name="submit" value="Submit">
                         <input class="button-r" type="reset" name="reset" value="Reset">
                     </div>
                 </form>
@@ -210,7 +208,7 @@
                         <li><a href="#">Additional features.</a></li>
                     </ul>
                 </div>
-            </section> 
+            </section>
             <div class="flex-container-footer">
                 <footer>
                     <a href="https://www.linkedin.com/company/radium-rocket/">
