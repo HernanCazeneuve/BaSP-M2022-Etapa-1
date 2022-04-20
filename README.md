@@ -10,8 +10,11 @@ We were introduced to HTML and this time the task was coding the landing page de
 We were introduced to CSS added styles to the HTML file with it.
 ### ```Week 4```
 Now that we acquired basic css abilities we were shown the tool flex-box to rework the css.
-
 https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana4/
+### ```Week 5```
+Made Javascript excercises.
+https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana5/
+
 
 ##### Author
 **Hernán Cazeneuve**
