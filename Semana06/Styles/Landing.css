@@ -12,7 +12,7 @@
     min-width: 300px;
     align-items: center;
 }
-@media (min-width: 840px){
+@media (min-width: 1024px){
     .flex-item-home {
         display: flex;
         flex-direction: column;

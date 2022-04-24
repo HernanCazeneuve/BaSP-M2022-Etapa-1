@@ -1,0 +1,23 @@
+.correo {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contraseña{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contraseña{
+    display: flex;
+    flex-wrap: wrap;
+    
+} 
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #373867;
+}     
+span{
+    display: none;
+    color:red;
+    font-size: 10px;
+}

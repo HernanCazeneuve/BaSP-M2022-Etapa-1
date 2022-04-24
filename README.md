@@ -14,7 +14,8 @@ https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana4/
 ### ```Week 5```
 Made Javascript excercises.
 https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana5/
-
-
+### ```Week 6```
+We linked Javascript to the sign-up and login pages.
+https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana06/
 ##### Author
 **Hernán Cazeneuve**

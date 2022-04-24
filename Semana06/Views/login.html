@@ -5,12 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-        <link rel="stylesheet"  href="../Styles/reset.css">
-        <link rel="stylesheet"  href="../Styles/Sidebar.css">
+        <link rel="stylesheet" href="../Styles/reset.css">
+        <link rel="stylesheet" href="../Styles/Sidebar.css">
         <link rel="stylesheet" href="../Styles/header.css">
         <link rel="stylesheet" href="../Styles/footer.css">
         <link rel="stylesheet" href="../Styles/login.css">
-        <link rel="stylesheet" href="../Styles/styles.css">
+        <link rel="stylesheet" href="../Styles/Styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
     <body>
@@ -18,9 +18,9 @@
             <aside class="menu">
                 <img class="logo" src="../Assets/LOGO-RR.png" alt="Radium Rocket">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Log in</a></li>
+                    <li><a href="../Views/index.html">Home</a></li>
+                    <li><a href="../Views/sign-up.html">Sign Up</a></li>
+                    <li><a href="../Views/login.html">Log in</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </aside>
@@ -41,17 +41,22 @@
             <main>
                 <section>
                     <h2>Login</h2>
-                    <form>
-                        <div>
+                    <form id="form">
+                        <div calss="correo">
                             <label>E-mail</label>
-                            <Input class="dirEmail" type="email"  email="email" placeholder="email@example.com">
+                            <Input id="mail" email="email" placeholder="email@example.com">
+                            <span id="reqMail">The adress is incorrect</span>
+                            <span id="incorrectMail">Error! Please write a valid e-mail</span>
                         </div>
-                        <div>
-                            <label for="pwd">Password:</label>
+                        <div class="contraseña">
+                            <label>Password:</label>
                             <input type="password" id="pwd" name="pwd">
+                            <span id="reqPwd">The password is not long enough</span>
+                            <span id="incorrectPwd">The password does not meet the restrictions</span>
+
                         </div>
-                        <div>
-                            <input class="button-s" type="submit" name="submit" value="Submit">
+                        <div class="botones">
+                            <button type="submit" id="button-s" type="submit" name="submit" value="Login">Login</button>
                             <input class="button-r" type="reset" name="reset" value="Reset">
                         </div>
                     </form>
@@ -82,5 +87,6 @@
                 </footer>
             </div>
         </div>
+        <script src="../JavaScript/login.js"></script>
     </body>
 </html>

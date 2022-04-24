@@ -10,7 +10,7 @@ section{
     padding: 25px 0px 25px 0px;
 }
 
-@media (min-width: 840px){
+@media (min-width: 1024px){
     body{
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +22,10 @@ section{
         width: 20%;
         background-color: #373867;
         text-align: center;
+    }
+    .logo{
+    display: flex;
+        
     }
     .flex-container-page{
         width: 80%;
@@ -62,7 +66,7 @@ section{
         padding: 10px 0px;
     }
 }
-@media (max-width: 840px){
+@media (max-width: 1024px){
     .menu{
         display: none;
     }
