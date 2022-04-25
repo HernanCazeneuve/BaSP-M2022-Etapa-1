@@ -43,50 +43,79 @@
                 <form>
                     <div>
                         <label>First Name</label>
-                        <input type="text" name="firstName" placeholder="John">
+                        <input id="name" type="text" name="firstName" placeholder="John">
+                    </div>
+                    <div>
+                        <span id="reqName">Name adress is required</span>
+                    </div>
+                    <div>
+                        <span id="incorrectName">Error! Name must have more than 3 characters</span>
+                    </div>
+                    <div>
+                        <span id="correctName">The Name is correct</span>
                     </div>
                     <div>
                         <label>Last Name</label>
-                        <input type="text" name="lastName" placeholder="Doe">
+                        <input id="lastName" type="text" name="lastName" placeholder="Doe">
                     </div>
                     <div>
                         <label>DNI</label>
-                        <input type="text" name="DNI" placeholder="ID number">
+                        <input id="idNum" type="text" name="DNI" placeholder="ID number">
                     </div>
                     <div>
                         <label>Birth Date</label>
-                        <input type="text" name="birthDate" placeholder="dd/mm/yyyy">
+                        <input id="bDate" type="text" name="birthDate" placeholder="dd/mm/yyyy">
                     </div>
                     <div>
                         <label>Phone</label>
-                        <input type="text" name="Phone" placeholder="Insert phone number">
+                        <input id="bDate" type="text" name="Phone" placeholder="Insert phone number">
                     </div>
                     <div>
                         <label>Adress</label>
-                        <input type="text" name="Adress" placeholder="Insert a street address">
+                        <input id="address" type="text" name="Adress" placeholder="Insert a street address">
                     </div>
                     <div>
                         <label>City</label>
-                        <input type="text" name="City" placeholder="Insert City">
+                        <input id="city" type="text" name="City" placeholder="Insert City">
                     </div>
                     <div>
                         <label>Post Code</label>
-                        <input type="text" name="postCode" placeholder="Ex:2000">>
+                        <input id="postCode" type="text" name="postCode" placeholder="Ex:2000">
+                    </div>
+                    <div class="correo">
+                        <label>E-mail:</label>
+                        <Input id="mail" email="email" placeholder="email@example.com">
                     </div>
                     <div>
-                        <label>E-mail</label>
-                        <Input class="dirEmail" type="email"  email="email" placeholder="email@example.com">
+                        <span id="reqMail">E-mail adress is required</span>
                     </div>
                     <div>
-                        <label for="pwd">Password:</label>
+                        <span id="incorrectMail">Error! Please write a valid e-mail</span>
+                    </div>
+                    <div>
+                        <span id="correctMail">The e-mail is accepted</span>
+                    </div>
+                    <div class="contraseña">
+                        <label>Password:</label>
                         <input type="password" id="pwd" name="pwd">
                     </div>
+                    <div>
+                        <span id="reqPwd">Password is required</span>
+                    </div>
+                    <div>  
+                        <span id="lenghtPwd">The password is not long enough</span>
+                    </div>
+                        <span id="incorrectPwd">The password does not meet the restrictions</span>
+                    <div>
+                    </div>
+                        <span id="correctPwd">The password is accepted</span>
+                    <div>     
                     <div>
                         <label for="rpwd">Repeat Password:</label>
                         <input type="password" id="rpwd" name="rpwd">
                     </div>
-                    <div>
-                        <input class="button-s" type="submit" name="submit" value="Submit">
+                    <div class="botones">
+                        <button type="submit" id="button-s" type="submit" name="submit" value="Login">Login</button>
                         <input class="button-r" type="reset" name="reset" value="Reset">
                     </div>
                 </form>

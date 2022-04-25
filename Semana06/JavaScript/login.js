@@ -1,11 +1,13 @@
 // Variables anda const declaration //
+// E-amil Variables //
 const registerForm = document.getElementById("form");
 const mailInput = document.getElementById("mail");
-const pwdInput = document.getElementById("pwd");
 const mailRegEx = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 const reqMail = document.getElementById("reqMail");
 const errorMail = document.getElementById("incorrectMail");
 const correctMail = document.getElementById("correctMail");
+// Password variables //
+const pwdInput = document.getElementById("pwd");
 const reqPwd = document.getElementById("reqPwd");
 const lenghtPwd = document.getElementById("lenghtPwd");
 const errorPwd = document.getElementById("incorrectPwd");
