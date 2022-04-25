@@ -1,6 +1,10 @@
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+}
 .logo{
     height: 150px;
-    width: 240px;
+    width: 90%;
     background-color: #373867;
     padding-left: 5%;
 }

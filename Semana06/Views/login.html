@@ -21,7 +21,6 @@
                     <li><a href="../Views/index.html">Home</a></li>
                     <li><a href="../Views/sign-up.html">Sign Up</a></li>
                     <li><a href="../Views/login.html">Log in</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
             </aside>
         </div>
@@ -42,23 +41,39 @@
                 <section>
                     <h2>Login</h2>
                     <form id="form">
-                        <div calss="correo">
-                            <label>E-mail</label>
-                            <Input id="mail" email="email" placeholder="email@example.com">
-                            <span id="reqMail">The adress is incorrect</span>
-                            <span id="incorrectMail">Error! Please write a valid e-mail</span>
-                        </div>
-                        <div class="contraseña">
-                            <label>Password:</label>
-                            <input type="password" id="pwd" name="pwd">
-                            <span id="reqPwd">The password is not long enough</span>
-                            <span id="incorrectPwd">The password does not meet the restrictions</span>
+                            <div class="correo">
+                                <label>E-mail:</label>
+                                <Input id="mail" email="email" placeholder="email@example.com">
+                            </div>
+                            <div>
+                                <span id="reqMail">E-mail adress is required</span>
+                            </div>
+                            <div>
+                                <span id="incorrectMail">Error! Please write a valid e-mail</span>
+                            </div>
+                            <div>
+                                <span id="correctMail">The e-mail is accepted</span>
+                            </div>
+                            <div class="contraseña">
+                                <label>Password:</label>
+                                <input type="password" id="pwd" name="pwd">
+                            </div>
+                            <div>
+                                <span id="reqPwd">Password is required</span>
+                            </div>
+                            <div>  
+                                <span id="lenghtPwd">The password is not long enough</span>
+                            </div>
+                                <span id="incorrectPwd">The password does not meet the restrictions</span>
+                            <div>
+                            </div>
+                                <span id="correctPwd">The password is accepted</span>
+                            <div>     
 
-                        </div>
-                        <div class="botones">
-                            <button type="submit" id="button-s" type="submit" name="submit" value="Login">Login</button>
-                            <input class="button-r" type="reset" name="reset" value="Reset">
-                        </div>
+                            <div class="botones">
+                                <button type="submit" id="button-s" type="submit" name="submit" value="Login">Login</button>
+                                <input class="button-r" type="reset" name="reset" value="Reset">
+                            </div>
                     </form>
                 </section>
             </main>

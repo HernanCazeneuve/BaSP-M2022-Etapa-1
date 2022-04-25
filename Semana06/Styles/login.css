@@ -1,23 +1,88 @@
 .correo {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: column;
+    padding: 2% 0 2% 0;
 }
+
 .contraseña{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: column;
+    padding: 2% 0 2% 0;
 }
-.contraseña{
-    display: flex;
-    flex-wrap: wrap;
-    
-} 
+
 label {
+    width: 30%;
     font-size: 16px;
     font-weight: bold;
-    color: #373867;
-}     
+    color: black;
+    margin-right: 5%;
+}   
+
 span{
     display: none;
     color:red;
     font-size: 10px;
+    padding: 2% 0 2% 0%;
 }
+
+#correctPwd {
+    display: none;
+    color:green;
+    font-size: 10px;
+}
+
+#correctMail {
+    display: none;
+    color:green;
+    font-size: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid #F2F2F2;
+    margin: 10px 10px;
+    padding: 10px;
+    background: #F2F2F2;
+    box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+input {
+    width: 70%;
+    height: 20px;
+
+}
+
+#button-s{
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    font: #373867;
+    background-color: #61C77E;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+.button-r{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #373867;
+    background-color: #fff;
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
