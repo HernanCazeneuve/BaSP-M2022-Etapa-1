@@ -13,11 +13,11 @@ const lenghtPwd = document.getElementById("lenghtPwd");
 const errorPwd = document.getElementById("incorrectPwd");
 const correctPwd = document.getElementById("correctPwd");
 var numbers = ["0","1","2","3","4","5","6","7","8","9"];
-var contNum = 0;
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", 
 "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", 
 "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var contChar = 0;
+var symbols = ['!',"'",'"','*', '+', '-', '/','$','%','&','(',')',
+'=','?','¿','`','^','[',']','´','{','Ç','}',',',';','.',':','-','_','º','ª',' '];
 
 //Prevent submit default //
 registerForm.addEventListener("submit", prevDef);
@@ -52,16 +52,20 @@ function writing(e){
 mailInput.addEventListener("focus", writing);
 
 // password validation //
-
 pwdInput.addEventListener("blur", passValidation);
 function passValidation() {
+    var contNum = 0;
+    var contChar = 0;
+    var contSymbols = 0; 
     for (i=0; i < pwdInput.value.length; i++) {
             if(numbers.includes(pwdInput.value[i])){
                 contNum++;
             } else if(letters.includes(pwdInput.value[i])){
                 contChar++;
-            }
-    }       
+            } else  {
+                contSymbols++;
+            }   
+    }    
     if(pwdInput.value === ""){
         reqPwd.style.display = 'flex';
         reqPwd.style.justifyContent = 'center';
@@ -72,7 +76,7 @@ function passValidation() {
             lenghtPwd.style.justifyContent = 'center';
             pwdInput.style.border = '2px solid red';
             console.log("corto")
-            } else if(pwdInput.value.length>7 && contNum>0 && contChar>0){
+            } else if(pwdInput.value.length>7 && contNum>0 && contChar>0 && contSymbols == 0){
             correctPwd.style.display = 'flex';
             correctPwd.style.justifyContent = 'center';
             pwdInput.style.border = '2px solid green';

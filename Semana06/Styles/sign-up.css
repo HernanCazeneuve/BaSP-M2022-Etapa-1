@@ -1,3 +1,15 @@
+.correo {
+    display: flex;
+    flex-wrap: column;
+    padding: 2% 0 2% 0;
+}
+
+.contraseña, .rContraseña {
+    display: flex;
+    flex-wrap: column;
+    padding: 2% 0 2% 0;
+}
+
 label {
     width: 30%;
     font-size: 16px;
@@ -12,6 +24,14 @@ span{
     font-size: 10px;
     padding: 2% 0 2% 0%;
 }
+
+#correctMail, #correctRPwd, #correctLName,#correctPwd, #correctName,
+#correctDni, #correctPhone, #correctPcode {
+    display: none;
+    color:green;
+    font-size: 10px;
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -34,7 +54,7 @@ h2 {
 input {
     width: 70%;
     height: 20px;
-
+    background: #c4c4c4;
 }
 
 #button-s{
