@@ -203,7 +203,6 @@ function lNameValidation(e) {
     }
     bDate.addEventListener("blur", dateValidation)
     function dateValidation(e){
-        age = e.target.value;
         if(bDate.value === ""){
             reqDate.style.display = 'flex';
             reqDate.style.justifyContent = 'center';
@@ -211,11 +210,11 @@ function lNameValidation(e) {
             console.log("Date vacio")
             return false;
         }
-        else if(getAge(age) <18 ||getAge(age)>100) {
+        else if(getAge(bDate) <18 ||getAge(bDate)>100) {
             incorrectDate.style.display = 'flex';
-        incorrectDate.style.justifyContent = 'center';
-        phone.style.border = '2px solid red';
-        console.log("Menor")
+            incorrectDate.style.justifyContent = 'center';
+            phone.style.border = '2px solid red';
+            console.log("Menor")
         return false;
     }
     else{
@@ -541,7 +540,7 @@ registerForm.onsubmit = function (e){
         return true
     }else if (nameValidation() !== true){
         alert ('Wrong Name');
-    }else if (surnameValidation() !== true) {
+    }else if (lNameValidation() !== true) {
         alert ('Wrong Surname');
     }else if (dniValidation() !== true) {
         alert ('Wrong DNI');
@@ -551,13 +550,15 @@ registerForm.onsubmit = function (e){
         alert ('Wrong Phone Number');
     }else if (adressValidation() !== true) {
         alert ('Wrong Adress');
-    }else if (locationValidation() !== true) {
+    }else if (cityValidation() !== true) {
         alert ('Wrong Location');
-    }else if (postalValidation() !== true) {
+    }else if (postCodeValidation() !== true) {
         alert ('Wrong Postal Code');
     }else if (emailValidation() !== true) {
         alert ('Wrong Email');
-    }else if (passwordValidation() !== true) {
+    }else if (passValidation() !== true) {
+        alert ('Wrong Password');
+    }else if (passRValidation() !== true) {
         alert ('Wrong Password');
     }
 }
