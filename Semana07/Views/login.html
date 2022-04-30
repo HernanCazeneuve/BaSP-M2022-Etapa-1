@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="../Styles/reset.css">
+        <link rel="stylesheet" href="../Styles/Sidebar.css">
+        <link rel="stylesheet" href="../Styles/header.css">
+        <link rel="stylesheet" href="../Styles/footer.css">
+        <link rel="stylesheet" href="../Styles/login.css">
+        <link rel="stylesheet" href="../Styles/Styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <div class="flex-container-nav">
+            <aside class="menu">
+                <img class="logo" src="../Assets/LOGO-RR.png" alt="Radium Rocket">
+                <ul>
+                    <li><a href="../Views/index.html">Home</a></li>
+                    <li><a href="../Views/sign-up.html">Sign Up</a></li>
+                    <li><a href="../Views/login.html">Log in</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="flex-container-page">
+            <header>
+                <div class="hamb-container">
+                    <div class="hamb-menu">
+                        <img src="../Assets/hamburguer.png" alt="menu">
+                    </div>
+                </div>
+                <div class="main-title">
+                    <h1>
+                        Trackgenix SA
+                    </h1>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <h2>Login</h2>
+                    <form id="form">
+                            <div class="correo">
+                                <label>E-mail:</label>
+                                <Input id="mail" email="email" placeholder="email@example.com">
+                            </div>
+                            <div>
+                                <span id="reqMail">E-mail adress is required</span>
+                            </div>
+                            <div>
+                                <span id="incorrectMail">Error! Please write a valid e-mail</span>
+                            </div>
+                            <div>
+                                <span id="correctMail">The e-mail is accepted</span>
+                            </div>
+                            <div class="contraseña">
+                                <label>Password:</label>
+                                <input type="password" id="pwd" name="pwd">
+                            </div>
+                            <div>
+                                <span id="reqPwd">Password is required</span>
+                            </div>
+                            <div>  
+                                <span id="lenghtPwd">The password is not long enough</span>
+                            </div>
+                            <div>
+                                <span id="incorrectPwd">The password does not meet the restrictions</span>
+                            </div>
+                            <div>
+                                <span id="correctPwd">The password is accepted</span>
+                            </div>   
+                            <div id="msgValidation"></div> 
+                            <div class="botones">
+                                <button type="submit" id="button-s" type="submit" name="submit" value="Login">Login</button>
+                                <input class="button-r" type="reset" name="reset" value="Reset">
+                            </div>
+                    </form>
+                </section>
+            </main>
+            <div class="flex-container-footer">
+                <footer>
+                    <a href="https://www.linkedin.com/company/radium-rocket/">
+                    <img src="../Assets/LI.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.facebook.com/radiumrocket">
+                    <img src="../Assets/FB.png" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com/radiumrocket">
+                    <img src="../Assets/TW.png" alt="twitter">
+                    </a>
+                    <a href="https://github.com">
+                    <img src="../Assets/nose.png" alt="github">
+                    </a>
+                    <a href="https://www.instagram.com/radium.rocket/">
+                    <img src="../Assets/IG.png" alt="Ig">
+                    </a>
+                    <div> 
+                        <p>
+                            Copyright &copy; 2022 Trackgenix S.A. All rights reserved.
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../JavaScript/login.js"></script>
+    </body>
+</html>
