@@ -6,9 +6,9 @@
     margin: 30px 0px;
 }
 footer img{
-    width: 18%;
-    height: 18%;
-
+    width: 15%;
+    height: 15%;
+    margin: 0 auto;
 }
 footer p{
     font-family: "Roboto", sans-serif;
@@ -16,4 +16,5 @@ footer p{
     font-size: 12px;
     color: #000000;
     margin-top: 2%;
+    margin-right: 25%;
 } 

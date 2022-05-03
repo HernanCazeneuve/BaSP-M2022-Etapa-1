@@ -1,69 +1,71 @@
-// Variables and const declaration //
-const registerForm = document.getElementById("form");
+// Variables and var declaration //
+var registerForm = document.getElementById("form");
 // Name variables //
-const fName = document.getElementById("fName");
-const reqName = document.getElementById("reqName");
-const incorrectName = document.getElementById("incorrectName");
-const correctName = document.getElementById("correctName");
+var fName = document.getElementById("fName");
+var reqName = document.getElementById("reqName");
+var incorrectName = document.getElementById("incorrectName");
+var correctName = document.getElementById("correctName");
 //LastName variables //
-const lName = document.getElementById("lName");
-const reqLName = document.getElementById("reqLName");
-const incorrectLName = document.getElementById("incorrectLName");
-const correctLName = document.getElementById("correctLName");
+var lName = document.getElementById("lName");
+var reqLName = document.getElementById("reqLName");
+var incorrectLName = document.getElementById("incorrectLName");
+var correctLName = document.getElementById("correctLName");
 //Birth date variables //
-const bDate = document.getElementById("bDate");
-const reqDate = document.getElementById("reqDate");
-const incorrectDate = document.getElementById("incorrectDate");
-const correctDate = document.getElementById("correctDate");
+var bDate = document.getElementById("bDate");
+var reqDate = document.getElementById("reqDate");
+var incorrectDate = document.getElementById("incorrectDate");
+var correctDate = document.getElementById("correctDate");
+var age;
 //DNI variables //
-const idNum = document.getElementById("idNum");
-const reqDni = document.getElementById("reqDni");
-const incorrectDni = document.getElementById("incorrectDni");
-const correctDni = document.getElementById("correctDni");
+var idNum = document.getElementById("idNum");
+var reqDni = document.getElementById("reqDni");
+var incorrectDni = document.getElementById("incorrectDni");
+var correctDni = document.getElementById("correctDni");
 //Phone number variables //
-const phone = document.getElementById("phone");
-const reqPhone = document.getElementById("reqPhone");
-const incorrectPhone = document.getElementById("incorrectPhone");
-const correctPhone = document.getElementById("correctPhone");
+var phone = document.getElementById("phone");
+var reqPhone = document.getElementById("reqPhone");
+var incorrectPhone = document.getElementById("incorrectPhone");
+var correctPhone = document.getElementById("correctPhone");
 //Adress variables //
-const adress = document.getElementById("adress");
-const reqAdress = document.getElementById("reqAdress");
-const incorrectAdress = document.getElementById("incorrectAdress");
-const correctAdress = document.getElementById("correctAdress");
+var address = document.getElementById("address");
+var reqAdress = document.getElementById("reqAdress");
+var incorrectAdress = document.getElementById("incorrectAdress");
+var correctAdress = document.getElementById("correctAdress");
 //City variables//
-const city = document.getElementById("city");
-const reqCity = document.getElementById("reqCity");
-const incorrectCity = document.getElementById("incorrectCity");
-const correctCity = document.getElementById("correctCity");
+var city = document.getElementById("city");
+var reqCity = document.getElementById("reqCity");
+var incorrectCity = document.getElementById("incorrectCity");
+var correctCity = document.getElementById("correctCity");
 //Post Code variables //
-const postCode = document.getElementById("postCode");
-const reqPcode = document.getElementById("reqPcode");
-const incorrectPcode = document.getElementById("incorrectPcode");
-const correctPcode = document.getElementById("correctPcode"); 
+var postCode = document.getElementById("postCode");
+var reqPcode = document.getElementById("reqPcode");
+var incorrectPcode = document.getElementById("incorrectPcode");
+var correctPcode = document.getElementById("correctPcode"); 
 // E-Mail variables //
-const mailInput = document.getElementById("mail");
-const mailRegEx = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
-const reqMail = document.getElementById("reqMail");
-const errorMail = document.getElementById("incorrectMail");
-const correctMail = document.getElementById("correctMail");
+var mailInput = document.getElementById("mail");
+var mailRegEx = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+var reqMail = document.getElementById("reqMail");
+var errorMail = document.getElementById("incorrectMail");
+var correctMail = document.getElementById("correctMail");
 // Password variables //
-const pwdInput = document.getElementById("pwd");
-const reqPwd = document.getElementById("reqPwd");
-const lenghtPwd = document.getElementById("lenghtPwd");
-const errorPwd = document.getElementById("incorrectPwd");
-const correctPwd = document.getElementById("correctPwd");
+var pwdInput = document.getElementById("pwd");
+var reqPwd = document.getElementById("reqPwd");
+var lenghtPwd = document.getElementById("lenghtPwd");
+var errorPwd = document.getElementById("incorrectPwd");
+var correctPwd = document.getElementById("correctPwd");
 //Repeat password variables //
-const rPwd = document.getElementById("rPwd");
-const reqRPwd = document.getElementById("reqRPwd");
-const incorrectRPwd = document.getElementById("incorrectRPwd");
-const correctRPwd = document.getElementById("correctRPwd")
+var rPwd = document.getElementById("rPwd");
+var reqRPwd = document.getElementById("reqRPwd");
+var incorrectRPwd = document.getElementById("incorrectRPwd");
+var correctRPwd = document.getElementById("correctRPwd")
 // Validation Arrays //
 var numbers = ["0","1","2","3","4","5","6","7","8","9"];
-const letter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", 
+var letter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", 
 "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", 
 "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",' '];
 var symbols = ['!',"'",'"','*', '+', '-', '/','$','%','&','(',')',
 '=','?','¿','`','^','[',']','´','{','Ç','}',',',';','.',':','-','_','º','ª'];
+var msgValidation = document.getElementById("msgValidation")
 
 //Name lastname validation//
 fName.addEventListener("blur", nameValidation);
@@ -195,10 +197,11 @@ function lNameValidation(e) {
     idNum.addEventListener("focus", writingDNI);
     
     //Birth date validation//
+    var newFormat = '';
     function getAge(bDate){
         var today = new Date();
         var bDt = new Date(bDate);
-        var age = today.getFullYear() - bDt.getFullYear();
+        age = today.getFullYear() - bDt.getFullYear();
         return age;
     }
     bDate.addEventListener("blur", dateValidation)
@@ -210,7 +213,7 @@ function lNameValidation(e) {
             console.log("Date vacio")
             return false;
         }
-        else if(getAge(bDate) <18 ||getAge(bDate)>100) {
+        else if(getAge(bDate.value) <18 ||getAge(bDate)>100) {
             incorrectDate.style.display = 'flex';
             incorrectDate.style.justifyContent = 'center';
             phone.style.border = '2px solid red';
@@ -222,6 +225,14 @@ function lNameValidation(e) {
         correctDate.style.justifyContent = 'center';
         bDate.style.border = '2px solid green';
         console.log("Date ok")
+     var formatDate = bDate.value.split('-');
+     newFormat =
+            formatDate.slice(1, 2) +
+            '/' +
+            formatDate.slice(2) +
+            '/' +
+            formatDate.slice(0, 1);
+            console.log(newFormat);
         return true;
     }
 }
@@ -276,8 +287,8 @@ function writingPhone(e){
     phone.style.border = '1px solid black'; 
 }
 phone.addEventListener("focus", writingPhone);
-//Adress validation //
-adress.addEventListener("blur", adressValidation)
+//Address validation //
+address.addEventListener("blur", adressValidation)
 function adressValidation(e){
     var numbers = ["0","1","2","3","4","5","6","7","8","9"];
     var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", 
@@ -288,41 +299,41 @@ function adressValidation(e){
     var contNum = 0;
     var contChar = 0;
     var contSymbols = 0;  
-    for (i=0; i < adress.value.length; i++) {
-        if(numbers.includes(adress.value[i])){
+    for (i=0; i < address.value.length; i++) {
+        if(numbers.includes(address.value[i])){
             contNum++;
-        } else if(letters.includes(adress.value[i])){
+        } else if(letters.includes(address.value[i])){
             contChar++;
         } else  {
             contSymbols++;
         }   
     }  
-    if( adress.value === ""){
+    if( address.value === ""){
         reqAdress.style.display = 'flex';
         reqAdress.style.justifyContent = 'center';
-        adress.style.border = '2px solid red';
-        console.log("adress vacio")
+        address.style.border = '2px solid red';
+        console.log("address vacio")
         return false;
-    } else if( adress.value.length<5 || contSymbols>0 || contNum<1 || contChar<1){
+    } else if( address.value.length<5 || contSymbols>0 || contNum<1 || contChar<1){
         incorrectAdress.style.display = 'flex';
         incorrectAdress.style.justifyContent = 'center';
-        adress.style.border = '2px solid red';
+        address.style.border = '2px solid red';
         console.log("Tiene caracteres ")
         return false;
     } else {
         correctAdress.style.display = 'flex';
         correctAdress.style.justifyContent = 'center';
-        adress.style.border = '2px solid green';
+        address.style.border = '2px solid green';
         console.log("ad ok")
         return true;
     }
 }
-adress.addEventListener("focus", writtingAdress)
+address.addEventListener("focus", writtingAdress)
 function writtingAdress(e){
     reqAdress.style.display = "none";
     incorrectAdress.style.display = "none";
     correctAdress.style.display = 'none';
-    adress.style.border = "solid 2px black";
+    address.style.border = "solid 2px black";
 }
 //City validation //
 var numbers = ["0","1","2","3","4","5","6","7","8","9"];
@@ -527,6 +538,8 @@ function writingRPwd(e){
 }
 rPwd.addEventListener("focus", writingRPwd);
 
+// Date format change
+
 // On Submit //
 registerForm.onsubmit = function (e){
     if (nameValidation() === true && lNameValidation() === true && dniValidation() === true &&  dateValidation() === true
@@ -534,31 +547,57 @@ registerForm.onsubmit = function (e){
     postCodeValidation() === true && emailValidation() === true &&  passValidation() === true && 
     passRValidation() === true) {
         alert ('Name: ' + fName.value + ' ' + 'Surname: ' + lName.value + ' ' + 'DNI: ' + idNum.value
-        + 'Date of Birth :' + bDate.value + ' ' + 'Phone Number :' + phone.value + ' ' + 'Adress :' + 
-        adress.value + ' ' + 'Location: ' + city.value + ' ' + 'Posta Code: ' + postCode.value + ' ' +
+        + 'Date of Birth :' + bDate.value + ' ' + 'Phone Number :' + phone.value + ' ' + 'Address :' + 
+        address.value + ' ' + 'Location: ' + city.value + ' ' + 'Posta Code: ' + postCode.value + ' ' +
         'Email: ' + mailInput.value + ' ' + 'Password: ' + pwdInput.value + 'Repeated Password: ' + rPwd.value);
+        //Server-side Validation
+        fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${fName.value}&lastName=${lName.value}&dni=${idNum.value}&dob=${newFormat}&phone=${phone.value}&address=${address.value}&city=${city.value}&zip=${postCode.value}&email=${mailInput.value}&password=${pwdInput.value}`)
+            .then(function(response) {
+                console.log(response)
+                return response.json();
+            })
+            .then(function (data) {
+                    data => msgValidation.innerHTML = "<p>" + data.msg + "</p>";
+                    console.log(data.msg);
+                    saveDataLocal(data);
+        
+                }) 
+                .catch(error => {
+                    console.error(error);
+            }) 
         return true
-    }else if (nameValidation() !== true){
+    }
+    if (nameValidation() !== true){
         alert ('Wrong Name');
-    }else if (lNameValidation() !== true) {
+    }
+    if (lNameValidation() !== true) {
         alert ('Wrong Surname');
-    }else if (dniValidation() !== true) {
+    }
+    if (dniValidation() !== true) {
         alert ('Wrong DNI');
-    }else if (dateValidation() !== true) {
+    }
+    if (dateValidation() !== true) {
         alert ('Wrong Date of Birth');
-    }else if (phoneValidation() !== true) {
+    }
+    if (phoneValidation() !== true) {
         alert ('Wrong Phone Number');
-    }else if (adressValidation() !== true) {
+    }
+    if (adressValidation() !== true) {
         alert ('Wrong Adress');
-    }else if (cityValidation() !== true) {
+    }
+    if (cityValidation() !== true) {
         alert ('Wrong Location');
-    }else if (postCodeValidation() !== true) {
+    }
+    if (postCodeValidation() !== true) {
         alert ('Wrong Postal Code');
-    }else if (emailValidation() !== true) {
+    }
+    if (emailValidation() !== true) {
         alert ('Wrong Email');
-    }else if (passValidation() !== true) {
+    }
+    if (passValidation() !== true) {
         alert ('Wrong Password');
-    }else if (passRValidation() !== true) {
+    }
+    if (passRValidation() !== true) {
         alert ('Wrong Password');
     }
 }
@@ -568,3 +607,30 @@ function prevDef(e) {
     e.preventDefault();
 }
 
+//save data on local storage
+function saveDataLocal() {
+    localStorage.setItem('name', fName.value);
+    localStorage.setItem('lastName', lName.value);
+    localStorage.setItem('dob', bDate.value);
+    localStorage.setItem('dni', idNum.value);
+    localStorage.setItem('phone', phone.value);
+    localStorage.setItem('address', address.value);
+    localStorage.setItem('city', city.value);
+    localStorage.setItem('zip', postCode.value);
+    localStorage.setItem('email', mailInput.value);
+    localStorage.setItem('password', pwdInput.value);
+}  
+
+//Complete the form with data from local storage. When refreshing the browser the the form is still completed.
+window.onload = function localDataCompleteForm () {
+    localStorage.getItem('name') !== null ? fName.value = localStorage.getItem('name') : null;
+    localStorage.getItem('lastName') !== null ? lName.value = localStorage.getItem('lastName') : null;
+    localStorage.getItem('dob') !== null ? bDate.value = localStorage.getItem('dob') : null;
+    localStorage.getItem('dni') !== null ? idNum.value = localStorage.getItem('dni') : null;
+    localStorage.getItem('phone') !== null ? phone.value = localStorage.getItem('phone') : null;
+    localStorage.getItem('address') !== null ? address.value = localStorage.getItem('address') : null;
+    localStorage.getItem('city') !== null ? city.value = localStorage.getItem('city') : null;
+    localStorage.getItem('zip') !== null ? postCode.value = localStorage.getItem('zip') : null;
+    localStorage.getItem('email') !== null ? mailInput.value = localStorage.getItem('email') : null;
+    localStorage.getItem('password') !== null ? pwdInput.value = localStorage.getItem('password') : null;
+}

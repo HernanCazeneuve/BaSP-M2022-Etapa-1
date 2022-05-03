@@ -17,5 +17,8 @@ https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana5/
 ### ```Week 6```
 We linked Javascript to the sign-up and login pages.
 https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana06/views/
+### ```Week 7```
+Use fetch and api's requests to validate data, and upload data in local storage.
+https://hernancazeneuve.github.io/BaSP-M2022-Etapa-1/Semana07/Views/
 ##### Author
 **Hernán Cazeneuve**

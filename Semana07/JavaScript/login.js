@@ -102,17 +102,19 @@ pwdInput.addEventListener("focus", writingPwd);
 
 // Alerts while submiting //
 registerForm.onsubmit = function (e){
-    if(emailValidation() === true && passValidation() == true){
+    if(emailValidation()&& passValidation()){
         alert('Email: '+ mailInput.value +" "+ "-"+ " "+"Password: "+ pwdInput.value);
-        var url = `https://basp-m2022-api-rest-server.herokuapp.com/login?email=${mailInput.value}&password=${pwdInput.value}`;
-        fetch(url)
+        fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${mailInput.value}&password=${pwdInput.value}`)
           .then(response => response.json())
-          .then(data => msgValidation.innerHTML = "<p>" + data.msg + "</p>");
+          .then(data => msgValidation.innerHTML = "<p>" + data.msg + "</p>")
+          .catch(function(error) {
+            console.log(error)
+        }) 
     }
-    else if(emailValidation() !== true && passValidation() == true){
+    else if(!emailValidation()&& passValidation()){
         alert("wrong E-mail");
     }
-    else if(emailValidation() === true && passValidation() !== true) {
+    else if(emailValidation() === true && !passValidation()) {
         alert("Wrong Password");
     }
     else {

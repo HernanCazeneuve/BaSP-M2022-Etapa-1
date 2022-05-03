@@ -1,15 +1,5 @@
-/* 
-.fHalf {
-    width: 49%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.sHalf {
-    width: 49%;
-    display: flex;
-    flex-wrap: wrap;
-} */
-.name, .lName, .idNum, .bDate, .phone, .adress, .city, .pCode, .contraseña, .rContraseña, .correo  {
+
+.name, .lName, .idNum, .bDate, .phone, .address, .city, .postCode, .contraseña, .rContraseña, .correo  {
     display: flex;
     flex-wrap: column;
     padding: 2% 0 2% 0;
@@ -82,4 +72,27 @@ input {
     background-color: #fff;
     text-align: center;
     margin: 2% 0 2% 0;
+}
+@media (min-width: 1024px){
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: auto;
+
+}
+.fHalf {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.sHalf {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+} 
+.botones{
+    display: inline-block;
+    margin-left: 20px;
+}
 }
