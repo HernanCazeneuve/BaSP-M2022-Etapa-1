@@ -557,7 +557,7 @@ registerForm.onsubmit = function (e){
                 return response.json();
             })
             .then(function (data) {
-                    data => msgValidation.innerHTML = "<p>" + data.msg + "</p>";
+                    msgValidation.innerHTML = "<p>" + data.msg + "</p>";
                     console.log(data.msg);
                     saveDataLocal(data);
         
